@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gugi&family=Noto+Sans+KR&family=Noto+Serif+KR&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size : cover;
+  background-color: black;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  font-family: 'Gugi', cursive;
+  font-size: 20px;
+  font-weight: 100;
+  overflow: hidden;
+  background-color: #111;
+  opacity: 0.5;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active1 {
+  background-color: #00307d;
+  color: white;
+}
+
+.topnav a.active2 {
+  background-color: yellow;
+  color: black;
+}
+
+/* Header/Blog Title */
+.header {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: 'Gugi', cursive;
+  font-size: 75px;
+  font-weight: 100;
+  color: white;
+  margin: 20px;
+}
+
+.header h2 {
+  font-family: 'Gugi', cursive;
+  font-size: 75px;
+  font-weight: 100;
+  color: red;
+  margin: 20px;
+}
+
+.header h5 {
+  font-family: 'Gugi', cursive;
+  font-size: 27px;
+  font-weight: 100;
+  color: white;
+  margin: 0px;
+}
+
+/* Add a card effect for articles */
+.card {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.card h2 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 10px;
+  color: white;
+}
+
+.card h5 {
+  font-family: 'Gugi', cursive;
+  font-size: 27px;
+  font-weight: 100;
+  color: white;
+  margin: 20px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Column */
+.column {
+  float: center;
+  width: 100%;
+  text-align: center;
+}
+
+/* Form Group */
+.form-group {
+  font-family: 'Gugi', cursive;
+  margin-top: 100;
+  width: 100%;
+  padding: 20px;
+}
+
+.form-group h2 {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 15px;
+  color: white;
+}
+
+.form-group h6 {
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 15px;
+  margin: 30px;
+  color: red;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+input[type=text] {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: white;
+  width: 50%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 0px solid #555;
+  outline: none;
+  width: 500px;
+}
+
+input[type=text]:focus {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: #00307d;
+  color: yellow;
+  font-weight: 200;
+  text-align: center;
+  width: 500px;
+}
+
+#button{
+  font-family: 'Gugi', cursive;
+  font-size: 20px;
+  font-weight: 300;
+  border: 0px solid blue;
+  background-color: yellow;
+  color: black;
+  padding: 5px;
+  width: 200px;
+}
