@@ -28,7 +28,7 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 25px;
+  padding: 12px 30px;
   text-decoration: none;
 }
 
@@ -48,6 +48,7 @@ body {
   background-color: yellow;
   color: black;
 }
+
 
 /* Header/Blog Title */
 .header {
@@ -83,8 +84,8 @@ body {
 /* Add a card effect for articles */
 .choice {
   padding: 0px;
-  margin-top: 40px;
-  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
 }
@@ -93,17 +94,17 @@ body {
 /* Add a card effect for articles */
 .card {
   padding: 0px;
-  margin-top: 40px;
-  margin-bottom: 0px;
+  margin: 20px;
 }
 
 .card img {
   max-width: 100%;
   height: auto;
+  margin: 10px;
 }
 
 .card h2 {
-  font-family: 'Noto Serif KR', serif;
+  font-family: 'Gugi', cursive;
   font-size: 30px;
   font-weight: 100;
   margin: 10px;
@@ -127,7 +128,6 @@ body {
   text-align: center;
 }
 
-
 /* Form Group */
 .form-group {
   font-family: 'Gugi', cursive;
@@ -145,6 +145,7 @@ body {
 }
 
 .form-group h6 {
+  font-family: 'Gugi', cursive;
   font-size: 30px;
   font-weight: 100;
   line-height: 15px;
@@ -220,18 +221,16 @@ input[type=text]:focus {
   width: 200px;
 }
 
-
 /* https://codepen.io/littlesnippets/pen/BodOdR */
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 figure.snip1132 {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Gugi', cursive;
   position: relative;
   overflow: hidden;
   margin: 10px;
+  width: 100%;
   min-width: 200px;
   max-width: 350px;
   max-height: 450px;
-  width: 100%;
   background: #000000;
   color: #ffffff;
   text-align: center;
@@ -246,7 +245,7 @@ figure.snip1132 * {
 }
 
 figure.snip1132 img {
-  max-width: 100%;
+  max-width: 200%;
   position: relative;
   opacity: 1;
 }

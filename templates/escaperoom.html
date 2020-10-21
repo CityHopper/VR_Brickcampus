@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>어서 와! 브릭캠퍼스제주 방탈출 게임이야!</title>
+  <title>어서 와, 브릭캠퍼스제주 방탈출 게임이야!</title>
 <link href="static/style.css?ver=1" rel="stylesheet">
 <style>
 body {
@@ -12,74 +12,51 @@ body {
 </style>
 </head>
 <body>
-<div class="topnav">
-  <a href="/"><img src="https://pds.saramin.co.kr/company/logo/201810/01/pfwws8_sc7x-3xrv1k_logo.png" width="60px">VR홈</a>
+<div class="topnav" id="topnav">
+  <a href="http://www.brickcampus.com/" target="_blank"><img src="https://pds.saramin.co.kr/company/logo/201810/01/pfwws8_sc7x-3xrv1k_logo.png" width="60px"></a>
   <a href="http://www.brickcampus.com/child/sub/jeju/info.php" target="_blank">브릭캠퍼스제주</a>
   <a href="https://booking.naver.com/booking/5/bizes/116089?area=plt" target="_blank">예매하기</a>
   <a href="https://www.youtube.com/channel/UCsImMqJ4w_lGIlb0MSzG-cw" target="_blank">유튜브</a>
-  <a href="#">스토리영상</a>
   <a class="active2" href="/escaperoom" style="float:right">VR투어 방탈출</a>
-  <a class="active1" href="https://kocca.vrmaker.co.kr/pano-player/1700790272" style="float:right">VR투어 처음부터</a>
+  <a class="active1" href="https://kocca.vrmaker.co.kr/pano-player/1700790272" style="float:right" target="_blank">VR투어 전체</a>
+  <a href="/storyvideo" style="float:right">스토리 영상</a>
+  <a href="/" style="float:right">홈</a>
 </div>
 <div class="header">
   <h1>자, 게임을 시작하지.</h1>
-  <h5>브릭캠퍼스에 감금된 당신은 문제를 맞혀야 탈출할 수 있다. </h5>
+  <h5>브릭캠퍼스에 감금된 당신은 문제를 맞혀야 탈출할 수 있네. </h5>
 </div>
 <div class="row">
   <div class="column">
     <div class="card">
-      <a href="https://kocca.vrmaker.co.kr/pano-player/1700790272" target="_blank"><img src='https://lh3.google.com/u/0/d/1ZHS9v2TPIseAfk_PUT6ksyY7dnejxKy0=w1679-h880-iv1' alt="방에 갇히기" width="300"></a>
-      <h5>바로 위 브릭으로 만든 TV를 클릭하여 방 곳곳에 숨어있는 힌트를 찾아라.</h5>
-    </div>
-  </div>
-    <div class="form-group">
-      <h2>아래 칸에 답을 입력하라.</h2>
-      <h2>답이 틀리면 당신은 사망한다.</h2>
-      <!--
-        {% if message %}
-          <h6>{{ message }}</h6>
-        {% endif %}
-        -->
-        <form action="" method="post">
-          <p>
-            <label for="answ"></label>
-            <input type="text" name="answ">
-          </p>
-          <p>
-            <input type="submit" value="도전" id="button">
-          </p>
-        </form>
-        <div>
-          <body>
-          </body>
-        </div>
+      <a href="https://kocca.vrmaker.co.kr/pano-player/1700790272" target="_blank">
+        <img src='https://lh3.google.com/u/0/d/1nqHOGkrGu2inwA8sWe_ELPaK5xVRdSgD=w1074-h937-iv1' alt="방에 갇히기" width="400 px;" padding="10 px;">
+      </a>
+      <h5>바로 위 브릭 TV를 클릭하여 방 안을 탐색한 후 답을 알아내시게.</h5>
+
+      <div class="form-group">
+        <h2>아래 칸에 답을 입력해.</h2>
+       <h2>방 안에는 특급 힌트도 숨어있으니 참고하길. 훗.</h2>
+        <!--
+          {% if message %}
+            <h6>{{ message }}</h6>
+          {% endif %}
+          -->
+          <form action="" method="post">
+            <p>
+
+              <input type="text" name="answ">
+            </p>
+            <p>
+              <input type="submit" value="도전" id="button">
+            </p>
+          </form>
+          <div>
+            <body>
+            </body>
+          </div>
       </div>
-    </div>
-  </div>
-  <!-- 주석 내용
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="form-group" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="form-group"><p>Image</p></div>
-      <div class="form-group"><p>Image</p></div>
-      <div class="form-group"><p>Image</p></div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
+
     </div>
   </div>
 </div>
-
-<div class="footer">
-  <h2>Footer</h2>
-</div>
-
-</body>
-</html>
--->

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 host_addr = "127.0.0.1"
@@ -7,6 +7,10 @@ port_num = "8080"
 @app.route('/')
 def home():
     return render_template("home.html")
+
+@app.route('/topnav')
+def topnav():
+    return render_template("topnav.html")
 
 @app.route('/escaperoom', methods=['POST', 'GET'])
 def escaperoom():
@@ -43,6 +47,10 @@ def ursaved():
 def urdead():
     temp = request.form.get('answ')
     return render_template("urdead.html", temp=temp)
+
+@app.route('/storyvideo')
+def storyvideo():
+    return render_template("storyvideo.html")
 
 if __name__ == '__main__':
     app.run(host=host_addr, port=port_num, debug=True)

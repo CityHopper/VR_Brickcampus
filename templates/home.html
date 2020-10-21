@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>브릭캠퍼스제주 VR투어</title>
-
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <script src="{{ url_for('static', filename='script.js') }}" ></script>
+<script src="{{ url_for('static', filename='includeHTML.js') }}" ></script>
+<script src="static/includeHTML.js"></script>
 <style>
 body {
   background-image: url('https://lh3.google.com/u/0/d/1TXPftlESbAjvmGxMMkR_zK81RHGAx-1_=w1280-h937-iv1');
@@ -13,15 +14,7 @@ body {
 </style>
 </head>
 <body>
-<div class="topnav" id="topnav">
-  <a href="/"><img src="https://pds.saramin.co.kr/company/logo/201810/01/pfwws8_sc7x-3xrv1k_logo.png" width="60px">VR홈</a>
-  <a href="http://www.brickcampus.com/child/sub/jeju/info.php" target="_blank">브릭캠퍼스제주</a>
-  <a href="https://booking.naver.com/booking/5/bizes/116089?area=plt" target="_blank">예매하기</a>
-  <a href="https://www.youtube.com/channel/UCsImMqJ4w_lGIlb0MSzG-cw" target="_blank">유튜브</a>
-  <a href="#">스토리영상</a>
-  <a class="active2" href="/escaperoom" style="float:right">VR투어 방탈출</a>
-  <a class="active1" href="https://kocca.vrmaker.co.kr/pano-player/1700790272" style="float:right" target="_blank">VR투어 전체</a>
-</div>
+<div include-html="topnav.html"></div>
 <div class="header">
   <h1>브릭캠퍼스제주 VR투어</h1>
   <h5>브릭캠퍼스제주로 랜선 여행 가자!</h5>
@@ -29,32 +22,49 @@ body {
 <div class="column">
   <div class="choice">
     <figure class="snip1132">
-      <img src="https://lh3.google.com/u/0/d/1dZ4FLQFQk3iLJly91IngljtM4JggAlbk=w1074-h937-iv1" alt="sample22" />
+      <img src="https://lh3.google.com/u/0/d/1dZ4FLQFQk3iLJly91IngljtM4JggAlbk=w1074-h937-iv1"/>
       <figcaption>
         <div class="heading">
           <h3>VR투어 <span> 전체</span></h3>
         </div>
         <div class="caption">
-          <p>브릭캠퍼스제주 둘러보기</p>
+          <p>made by 김민지</p>
         </div>
       </figcaption>
       <a href="#"></a>
     </figure>
     <figure class="snip1132" style="color: black;">
-      <img src="https://lh3.google.com/u/0/d/1AcAMc9mEwjl0kF0fOHDshqjjVgo48M3h=w1074-h937-iv1" alt="sample18" />
-      <figcaption font-color="black">
+      <img src="https://lh3.google.com/u/0/d/1AcAMc9mEwjl0kF0fOHDshqjjVgo48M3h=w1074-h937-iv1"/>
+      <figcaption>
         <div class="heading">
           <h3>VR투어 <span> 방탈출</span></h3>
         </div>
         <div class="caption">
-          <p>탈출하면 할인 쿠폰이!</p>
+          <p>made by 강영훈</p>
         </div>
       </figcaption>
       <a href="/escaperoom"></a>
     </figure>
   </div>
+  <div class="choice">
+    <figure class="snip1132" style="max-width:720px; max-height: 160px;">
+      <img src="https://lh3.google.com/u/0/d/1okScOrpEZTEUOK45-mamyXtPHooXhce_=w1067-h920-iv1"/>
+      <figcaption>
+        <div class="heading">
+          <h3>스토리 <span> 영상</span></h3>
+        </div>
+        <div class="caption">
+          <p>made by 안지선</p>
+        </div>
+      </figcaption>
+      <a href="/storyvideo"></a>
+    </figure>
+  </div>
 </div>
-  <script>
+<script>
+includeHTML();
+</script>
+<script>
 function zoomIn(event) {
   event.target.style.width = "400px";
   event.target.style.height = "520px";
@@ -66,8 +76,5 @@ function zoomOut(event) {
   event.target.style.height = "450px";
   event.target.style.transition = "all 0.5s";
 }
- </script>
-
-  </div>
-</div>
+</script>
 </body>
