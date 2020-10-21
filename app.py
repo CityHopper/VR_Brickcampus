@@ -12,7 +12,6 @@ def home():
 def escaperoom():
     answer1 = '말보로골드'
     message = ''
-    temp = ''
     if request.method == 'POST':
         temp = request.form.get('answ')
         if temp == answer1:
@@ -22,7 +21,7 @@ def escaperoom():
             # message = '당신은 사망했습니다.'
             return redirect(url_for('urdead'), code=307)
     elif request.method == 'GET':
-        temp = request.args.get('answ')
+        # temp = request.args.get('answ')
         pass
         # if temp == '':
         #     pass

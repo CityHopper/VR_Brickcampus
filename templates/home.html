@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>브릭캠퍼스제주 VR투어</title>
-<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}" ></script>
 <style>
 body {
   background-image: url('https://lh3.google.com/u/0/d/1TXPftlESbAjvmGxMMkR_zK81RHGAx-1_=w1280-h937-iv1');
@@ -18,36 +20,54 @@ body {
   <a href="https://www.youtube.com/channel/UCsImMqJ4w_lGIlb0MSzG-cw" target="_blank">유튜브</a>
   <a href="#">스토리영상</a>
   <a class="active2" href="/escaperoom" style="float:right">VR투어 방탈출</a>
-  <a class="active1" href="https://kocca.vrmaker.co.kr/pano-player/1700790272" style="float:right" target="_blank">VR투어 처음부터</a>
+  <a class="active1" href="https://kocca.vrmaker.co.kr/pano-player/1700790272" style="float:right" target="_blank">VR투어 전체</a>
 </div>
 <div class="header">
   <h1>브릭캠퍼스제주 VR투어</h1>
   <h5>브릭캠퍼스제주로 랜선 여행 가자!</h5>
 </div>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <a href="https://kocca.vrmaker.co.kr/pano-player/1700790272" target="_blank"><img src='https://lh3.google.com/u/0/d/1ZHS9v2TPIseAfk_PUT6ksyY7dnejxKy0=w1679-h880-iv1' alt="방에 갇히기" width="300"></a>
-      <h5>바로 위 브릭으로 만든 TV를 클릭하여 방 곳곳에 숨어있는 힌트를 찾아라.</h5>
-      <h2>문제: 내가 피는 담배의 이름이 무엇인가?</h2>
-    </div>
-    <div class="form-group">
-      <h2>아래 칸에 답을 입력하라.</h2>
-      <h2>답이 틀리면 당신은 사망한다.</h2>
-        <form action="" method="post">
-          <p>
-            <label for="answ"></label>
-            <input type="text" name="answ">
-          </p>
-          <p>
-            <input type="submit" value="도전" id="button">
-          </p>
-        </form>
-        <div>
-          <body>
-          </body>
+<div class="column">
+  <div class="choice">
+    <figure class="snip1132">
+      <img src="https://lh3.google.com/u/0/d/1dZ4FLQFQk3iLJly91IngljtM4JggAlbk=w1074-h937-iv1" alt="sample22" />
+      <figcaption>
+        <div class="heading">
+          <h3>VR투어 <span> 전체</span></h3>
         </div>
-      </div>
-    </div>
+        <div class="caption">
+          <p>브릭캠퍼스제주 둘러보기</p>
+        </div>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1132" style="color: black;">
+      <img src="https://lh3.google.com/u/0/d/1AcAMc9mEwjl0kF0fOHDshqjjVgo48M3h=w1074-h937-iv1" alt="sample18" />
+      <figcaption font-color="black">
+        <div class="heading">
+          <h3>VR투어 <span> 방탈출</span></h3>
+        </div>
+        <div class="caption">
+          <p>탈출하면 할인 쿠폰이!</p>
+        </div>
+      </figcaption>
+      <a href="/escaperoom"></a>
+    </figure>
   </div>
+</div>
+  <script>
+function zoomIn(event) {
+  event.target.style.width = "400px";
+  event.target.style.height = "520px";
+  event.target.style.transition = "all 0.5s";
+}
+
+function zoomOut(event) {
+  event.target.style.width = "350px";
+  event.target.style.height = "450px";
+  event.target.style.transition = "all 0.5s";
+}
+ </script>
+
+  </div>
+</div>
 </body>
