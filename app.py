@@ -14,7 +14,7 @@ def topnav():
 
 @app.route('/escaperoom', methods=['POST', 'GET'])
 def escaperoom():
-    answer1 = '말보로골드'
+    answer1 = '자연'
     message = ''
     if request.method == 'POST':
         temp = request.form.get('answ')

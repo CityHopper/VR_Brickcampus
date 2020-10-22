@@ -33,7 +33,7 @@ body {
 }
 
 /* Change color on hover */
-.topnav a:hover {
+.topnav a:hover, .topnav a.active1:hover, .topnav a.active2:hover {
   background-color: #ddd;
   color: black;
 }
@@ -48,6 +48,8 @@ body {
   background-color: yellow;
   color: black;
 }
+
+
 
 
 /* Header/Blog Title */
